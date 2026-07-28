@@ -81,7 +81,8 @@ const handleRemoveFromShoppingCart = (item) => {
 <div>
   <h2>{product.name}</h2>
   <h2>price: {product.price}</h2>
-  <button onClick={()=> {handleAddToCart(product)}}>Add to {product.name} to shopping Cart</button>
+  <button onClick={()=> {handleAddToCart(product)}}>Add  {product.name} to shopping Cart</button>
+
 </div>
 
       ))}
@@ -93,6 +94,8 @@ const handleRemoveFromShoppingCart = (item) => {
          
         <h2>{item.name}</h2>
         <h2>{item.price}</h2>
+        <button onClick={()=> {handleRemoveFromShoppingCart(item)}}>remove  {item.name} to shopping Cart</button>
+
         </div>
     ))}
     </div>
